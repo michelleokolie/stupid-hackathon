@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3l3ly8uylw2q"
+path="res://.godot/imported/AY 67 Meme Sound Effect.mp3-12e90bebd452fbd7b1e6686069fe7612.mp3str"
+
+[deps]
+
+source_file="res://audio/AY 67 Meme Sound Effect.mp3"
+dest_files=["res://.godot/imported/AY 67 Meme Sound Effect.mp3-12e90bebd452fbd7b1e6686069fe7612.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
