@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bljslh2oujcdi"]
+
+[ext_resource type="Texture2D" uid="uid://c2uvjwihjo752" path="res://assests/sprites/tralalero tralala.png" id="1_3atut"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82lmo"]
+atlas = ExtResource("1_3atut")
+region = Rect2(0, 0, 522, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3h34"]
+atlas = ExtResource("1_3atut")
+region = Rect2(522, 0, 522, 336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlrpx"]
+atlas = ExtResource("1_3atut")
+region = Rect2(1044, 0, 522, 336)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uqrys"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82lmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3h34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlrpx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="tralalero tralala" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uqrys")
+autoplay = "default"
+frame = 1
+frame_progress = 0.7870421

@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://u1hr33ipkiiv"]
+
+[ext_resource type="Texture2D" uid="uid://b6qdg3005udqr" path="res://assests/sprites/matcha.png" id="1_y0rlq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3oig"]
+atlas = ExtResource("1_y0rlq")
+region = Rect2(0, 0, 14, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6d6h0"]
+atlas = ExtResource("1_y0rlq")
+region = Rect2(14, 0, 14, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qeimi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3oig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6d6h0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.5
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3x4h5"]
+size = Vector2(7, 13)
+
+[node name="matcha" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qeimi")
+autoplay = "default"
+frame_progress = 0.7884296
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 2.5)
+shape = SubResource("RectangleShape2D_3x4h5")
